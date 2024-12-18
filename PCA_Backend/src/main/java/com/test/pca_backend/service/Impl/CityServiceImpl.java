@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 public class CityServiceImpl implements CityService {
     @Autowired
     private CityMapper cityMapper;
+
     @Override
     public City selectCityByID(int id) {
         return cityMapper.selectCityById(id);

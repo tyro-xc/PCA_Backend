@@ -6,7 +6,6 @@ import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface CityMapper {
-
     @Select("select * from city where father = #{id}")
     City selectCityById(int id);
 

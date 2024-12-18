@@ -12,7 +12,6 @@ public class ProvinceServiceImpl implements ProvinceService {
 
     @Autowired
     private ProvinceMapper provinceMapper;
-
     @Override
     public List<Province> getAllProvince() {
         return provinceMapper.getAllProvinces();

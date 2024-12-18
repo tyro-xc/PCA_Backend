@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @RestController
 public class CityController {
+
     @Autowired
     private CityServiceImpl cityServiceImpl;
     @RequestMapping("/selectCityByID")
