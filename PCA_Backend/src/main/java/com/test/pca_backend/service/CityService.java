@@ -2,7 +2,9 @@ package com.test.pca_backend.service;
 
 import com.test.pca_backend.pojo.City;
 
+import java.util.List;
+
 public interface CityService {
 
-    City selectCityByID(int id);
+    List<City> selectCityByID(int id);
 }

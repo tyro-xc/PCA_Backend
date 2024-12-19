@@ -6,13 +6,15 @@ import com.test.pca_backend.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CityServiceImpl implements CityService {
     @Autowired
     private CityMapper cityMapper;
 
     @Override
-    public City selectCityByID(int id) {
+    public List<City> selectCityByID(int id) {
         return cityMapper.selectCityById(id);
     }
 }

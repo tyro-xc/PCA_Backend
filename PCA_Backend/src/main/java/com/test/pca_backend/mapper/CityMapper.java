@@ -4,9 +4,11 @@ import com.test.pca_backend.pojo.City;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
+import java.util.List;
+
 @Mapper
 public interface CityMapper {
     @Select("select * from city where father = #{id}")
-    City selectCityById(int id);
+    List<City> selectCityById(int id);
 
 }
